@@ -1,0 +1,11 @@
+{
+"type": "FeatureCollection",
+"name": "section_limits",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::32198" } },
+"features": [
+{ "type": "Feature", "properties": { "X_leaflet_id": 3971, "feature_type": "polyline" }, "geometry": { "type": "LineString", "coordinates": [ [ -104804.344346335565206, 467663.205207020684611 ], [ -100728.678734328917926, 469436.979808917210903 ] ] } },
+{ "type": "Feature", "properties": { "X_leaflet_id": 3982, "feature_type": "polyline" }, "geometry": { "type": "LineString", "coordinates": [ [ -109503.636870606103912, 475826.059204169374425 ], [ -110559.136937839241, 470535.559626821894199 ] ] } },
+{ "type": "Feature", "properties": { "X_leaflet_id": 4805, "feature_type": "polyline" }, "geometry": { "type": "LineString", "coordinates": [ [ -166868.783929552184418, 489936.529633171157911 ], [ -164651.928698135685408, 484256.354695164016448 ] ] } },
+{ "type": "Feature", "properties": { "X_leaflet_id": 4818, "feature_type": "polyline" }, "geometry": { "type": "LineString", "coordinates": [ [ -162441.83959922863869, 489983.295249349321239 ], [ -163416.939381195144961, 483960.491915172839072 ] ] } }
+]
+}

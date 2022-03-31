@@ -1,0 +1,32 @@
+---
+title: Échantillonnage Saguenay 2022
+output: html_document
+---
+
+```{r, include = FALSE}
+library(sf)
+library(mapview)
+sections <- st_read("./data/data-raw/saguenay_sections.geojson")
+stations <- st_read("./data/data-output/stations.geojson")
+```
+
+# Carte
+
+```{r, echo = FALSE, warnings = FALSE, message = FALSE, fig.width = 14, fig.height = 7}
+# Map
+mv <- mapview(sections[,"name"]) + stations
+mv
+```
+
+# Stations 
+
+```{r, echo = FALSE, warnings = FALSE, message = FALSE, fig.width = 14, fig.height = 7}
+stations <- st_transform(stations, 4326)
+xy <- st_coordinates(stations)
+prj <- st_crs(stations)
+stations <- st_drop_geometry(stations)
+stations <- cbind(stations, xy)
+cat(paste0('Projection: ', prj$input, ' (EPSG: ', prj$epsg, ')'))
+knitr::kable(stations, col.names = c('Station', 'Longitude','Latitude'), row.names = FALSE) %>%
+    kableExtra::kable_styling(full_width = F, position = "left")
+```
