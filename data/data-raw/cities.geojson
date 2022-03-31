@@ -1,0 +1,15 @@
+{
+"type": "FeatureCollection",
+"name": "cities",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::32198" } },
+"features": [
+{ "type": "Feature", "properties": { "X_leaflet_id": 2038, "feature_type": "circlemarker", "radius": 10 }, "geometry": { "type": "Point", "coordinates": [ -176949.158294801367447, 497396.308098924462683 ] } },
+{ "type": "Feature", "properties": { "X_leaflet_id": 3049, "feature_type": "circlemarker", "radius": 10 }, "geometry": { "type": "Point", "coordinates": [ -170178.383698869787622, 496224.98200424289098 ] } },
+{ "type": "Feature", "properties": { "X_leaflet_id": 3055, "feature_type": "circlemarker", "radius": 10 }, "geometry": { "type": "Point", "coordinates": [ -171601.499444339569891, 488263.181580185424536 ] } },
+{ "type": "Feature", "properties": { "X_leaflet_id": 3062, "feature_type": "circlemarker", "radius": 10 }, "geometry": { "type": "Point", "coordinates": [ -158263.338761636114214, 491005.22273858205881 ] } },
+{ "type": "Feature", "properties": { "X_leaflet_id": 3196, "feature_type": "circlemarker", "radius": 10 }, "geometry": { "type": "Point", "coordinates": [ -135895.754207598627545, 478213.603407966846135 ] } },
+{ "type": "Feature", "properties": { "X_leaflet_id": 3202, "feature_type": "circlemarker", "radius": 10 }, "geometry": { "type": "Point", "coordinates": [ -127159.818774347950239, 472018.038025789719541 ] } },
+{ "type": "Feature", "properties": { "X_leaflet_id": 3240, "feature_type": "circlemarker", "radius": 10 }, "geometry": { "type": "Point", "coordinates": [ -106148.396415579059976, 475181.384225655638147 ] } },
+{ "type": "Feature", "properties": { "X_leaflet_id": 3437, "feature_type": "circlemarker", "radius": 10 }, "geometry": { "type": "Point", "coordinates": [ -90299.715231541194953, 461362.009786799259018 ] } }
+]
+}
