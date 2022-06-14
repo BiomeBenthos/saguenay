@@ -35,7 +35,8 @@ mapview(sections) + mapview(samples)
 
 
 
-
+dat <- st_transform(dat, crs = 4326) %>%
+       st_coordinates()
 # Export
-st_write(sections, "data/data-raw/saguenay_sections.geojson")
+write.csv(dat, "data/data-output/stations.csv", row.names = FALSE)
             
